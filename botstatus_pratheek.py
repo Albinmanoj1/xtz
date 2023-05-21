@@ -21,7 +21,7 @@ async def main_pratheek():
     async with app:
             while True:
                 print("Checking...")
-                xxx_pratheek = f"- ᗷOT ᒪIᐯE STᗩTS | ᴀᴅʜɪ -"
+                xxx_pratheek = f"**- ᗷOT ᒪIᐯE STᗩTS | ♥️-**"
                 for bot in BOT_LIST:
                     try:
                         yyy_pratheek = await app.send_message(bot, "/start")
@@ -31,7 +31,7 @@ async def main_pratheek():
                         async for ccc in zzz_pratheek:
                             bbb = ccc.id
                         if aaa == bbb:
-                            xxx_pratheek += f"\n\n❖  @{bot}\n        └ **ᴅᴏᴡɴ** 🚫"
+                            xxx_pratheek += f"\n\n❖  **@{bot}**\n        └ **ᴅᴏᴡɴ** 🚫"
                             for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
                                     await app.send_message(int(bot_admin_id), f"🚨 **ʙᴇᴇᴘ ʙᴇᴇᴘ ᴅᴏᴡɴ @{bot} is down** ❌")
@@ -39,15 +39,15 @@ async def main_pratheek():
                                     pass
                             await app.read_chat_history(bot)
                         else:
-                            xxx_pratheek += f"\n\n❖  @{bot}\n        └ **ᴀʟɪᴠᴇ** ✅"
+                            xxx_pratheek += f"\n\n❖  **@{bot}**\n        └ **ᴀʟɪᴠᴇ** ✅"
                             await app.read_chat_history(bot)
                     except FloodWait as e:
                         await asyncio.sleep(e.x)            
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-                xxx_pratheek += f"\n\n✔️ ʟᴀꜱᴛ ᴄʜᴇᴄᴋᴇᴅ ᴏɴ: {last_update} ({TIME_ZONE})\n\n**♻️ ʀᴇꜰʀᴇꜱʜᴇꜱ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ  - ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴀᴅʜɪ**"
+                xxx_pratheek += f"\n\n**✔️ ʟᴀꜱᴛ ᴄʜᴇᴄᴋᴇᴅ ᴏɴ: {last_update} ({TIME_ZONE})**\n\n**♻️ ʀᴇꜰʀᴇꜱʜᴇꜱ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ  - ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴀᴀᴅʜɪ**"
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_pratheek)
-                print(f"ʟᴀꜱᴛ ᴄʜᴇᴄᴋᴇᴅ ᴏɴ: {last_update}")                
+                print(f"**ʟᴀꜱᴛ ᴄʜᴇᴄᴋᴇᴅ ᴏɴ: {last_update}**")                
                 await asyncio.sleep(6300)
                         
 app.run(main_pratheek())
