@@ -21,7 +21,7 @@ async def main_pratheek():
     async with app:
             while True:
                 print("Checking...")
-                xxx_pratheek = f"**￫ ♥️ ᗷOT ᒪIᐯE STᗩTS ♥️ ￩**"
+                xxx_pratheek = f"**‹ ♥️ ᗷOT ᒪIᐯE STᗩTS ♥️ ›**"
                 for bot in BOT_LIST:
                     try:
                         yyy_pratheek = await app.send_message(bot, "/start")
@@ -44,8 +44,8 @@ async def main_pratheek():
                     except FloodWait as e:
                         await asyncio.sleep(e.x)            
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
-                last_update = time.strftime(f"%d %b %Y ᴀᴛ %I:%M")
-                xxx_pratheek += f"\n\n**⚔️ ʟᴀꜱᴛ ᴄʜᴇᴄᴋᴇᴅ ᴏɴ : {last_update} ({TIME_ZONE})**\n\n**♻️ ᴜᴘᴅᴀᴛᴇꜱ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ**\n**🛸 ᴘᴏᴡᴇʀᴇᴅ ʙʏ [ᴀᴀᴅʜɪ](t.md/AboutAadhi)**"
+                last_update = time.strftime(f"%d %b %Y at %I:%M %p")
+                xxx_pratheek += f"\n\n**⚔️ ʟᴀꜱᴛ ᴄʜᴇᴄᴋᴇᴅ ᴏɴ : {last_update}**\n\n**♻️ ᴜᴘᴅᴀᴛᴇꜱ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ**\n**🛸 ᴘᴏᴡᴇʀᴇᴅ ʙʏ [ᴀᴀᴅʜɪ](t.md/AboutAadhi)**"
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_pratheek)
                 print(f"**ʟᴀꜱᴛ ᴄʜᴇᴄᴋᴇᴅ ᴏɴ : {last_update}**")                
                 await asyncio.sleep(6300)
