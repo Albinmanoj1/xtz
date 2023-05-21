@@ -21,7 +21,7 @@ async def main_pratheek():
     async with app:
             while True:
                 print("Checking...")
-                xxx_pratheek = f"📊 | 𝗟𝗜𝗩𝗘 𝗕𝗢𝗧 𝗦𝗧𝗔𝗧𝗨𝗦"
+                xxx_pratheek = f"Bot Live Stats | Aadhi"
                 for bot in BOT_LIST:
                     try:
                         yyy_pratheek = await app.send_message(bot, "/start")
@@ -31,7 +31,7 @@ async def main_pratheek():
                         async for ccc in zzz_pratheek:
                             bbb = ccc.id
                         if aaa == bbb:
-                            xxx_pratheek += f"\n\n🤖  @{bot}\n        └ **Down** ❌"
+                            xxx_pratheek += f"\n\n❖  @{bot}\n        └ **Down** 🚫"
                             for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
                                     await app.send_message(int(bot_admin_id), f"🚨 **Beep! Beep!! @{bot} is down** ❌")
@@ -39,7 +39,7 @@ async def main_pratheek():
                                     pass
                             await app.read_chat_history(bot)
                         else:
-                            xxx_pratheek += f"\n\n🤖  @{bot}\n        └ **Alive** ✅"
+                            xxx_pratheek += f"\n\n❖  @{bot}\n        └ **Alive** ✅"
                             await app.read_chat_history(bot)
                     except FloodWait as e:
                         await asyncio.sleep(e.x)            
