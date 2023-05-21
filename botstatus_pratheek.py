@@ -48,6 +48,6 @@ async def main_pratheek():
                 xxx_pratheek += f"\n\n**⚔️ ʟᴀꜱᴛ ᴄʜᴇᴄᴋᴇᴅ ᴏɴ : {last_update}**\n\n**♻️ ᴜᴘᴅᴀᴛᴇꜱ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ**\n**🛸 ᴘᴏᴡᴇʀᴇᴅ ʙʏ [ᴀᴀᴅʜɪ](t.md/AboutAadhi)**"
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_pratheek)
                 print(f"**ʟᴀꜱᴛ ᴄʜᴇᴄᴋᴇᴅ ᴏɴ : {last_update}**")                
-                await asyncio.sleep(6300)
+                await asyncio.sleep(2100)
                         
 app.run(main_pratheek())
